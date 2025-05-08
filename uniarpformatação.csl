@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" version="1.0" class="in-text" demote-non-dropping-particle="never" default-locale="pt-BR">
   <info>
-    <title>Associação Brasileira de Normas Técnicas - UNIARP v5 (Português - Brasil)</title> <title-short>ABNT-UNIARP</title-short>
-    <id>http://www.zotero.org/styles/associacao-brasileira-de-normas-tecnicas-uniarp-v5</id> <link href="http://www.zotero.org/styles/associacao-brasileira-de-normas-tecnicas-uniarp-v5" rel="self"/> <link href="https://github.com/citation-style-language/styles/blob/master/associacao-brasileira-de-normas-tecnicas.csl" rel="template"/>
+    <title>Associação Brasileira de Normas Técnicas - UNIARP v6 (Português - Brasil)</title> <title-short>ABNT-UNIARP</title-short>
+    <id>http://www.zotero.org/styles/associacao-brasileira-de-normas-tecnicas-uniarp-v6</id> <link href="http://www.zotero.org/styles/associacao-brasileira-de-normas-tecnicas-uniarp-v6" rel="self"/> <link href="https://github.com/citation-style-language/styles/blob/master/associacao-brasileira-de-normas-tecnicas.csl" rel="template"/>
     <link href="https://uniarp.edu.br/normalizacao/" rel="documentation"/>
     <author>
       <name>Juliana Geyna Régis et al. (Autores Originais)</name>
@@ -13,7 +13,7 @@
     <category citation-format="author-date"/>
     <category field="generic-base"/>
     <summary>Estilo ABNT (baseado em versão de 2022 que referenciava normas de 2002) adaptado para as normas da UNIARP (NBR 10520:2023 e NBR 6023:2018). Correções aplicadas sobre a base CSL de 2022.</summary>
-    <updated>2025-05-08T00:00:00-03:00</updated> <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
+    <updated>2025-05-08T00:10:00-03:00</updated> <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="pt-BR">
     <terms>
@@ -133,7 +133,8 @@
      <group delimiter=". " prefix=". ">
       <text variable="URL" prefix="Disponível em: "/>
       <date variable="accessed" prefix="Acesso em: ">
-        <date-part name="day" suffix=" "/> <date-part name="month" form="short" suffix=" " text-case="lowercase"/>
+        <date-part name="day"/>
+        <date-part name="month" form="short" text-case="lowercase"/>
         <date-part name="year"/>
       </date>
     </group>
@@ -208,8 +209,8 @@
         <text variable="event" text-case="uppercase"/>
         <text variable="number" prefix=", "/>
         <date variable="event-date" form="text" prefix=", ">
-             <date-part name="day" suffix=" "/>
-             <date-part name="month" form="short" suffix=" " text-case="lowercase"/>
+            <date-part name="day"/>
+             <date-part name="month" form="short" text-case="lowercase"/>
              <date-part name="year"/>
         </date>
         <text variable="event-place" prefix=", "/>
@@ -223,8 +224,8 @@
           <choose>
             <if type="book chapter thesis" match="none">
               <date variable="issued" form="text" date-parts="year-month-day">
-                <date-part name="day" suffix=" "/>
-                <date-part name="month" form="short" suffix=" " text-case="lowercase"/>
+                 <date-part name="day"/>
+                <date-part name="month" form="short" text-case="lowercase"/>
               </date>
             </if>
           </choose>
@@ -268,8 +269,8 @@
       <if type="bill">
         <group delimiter=", " prefix=". ">
           <date variable="issued" form="text">
-            <date-part name="day" suffix=" "/>
-            <date-part name="month" form="short" suffix=" " text-case="lowercase"/>
+             <date-part name="day"/>
+            <date-part name="month" form="short" text-case="lowercase"/>
             <date-part name="year"/>
           </date>
           <text variable="section" prefix="Sec. "/>
